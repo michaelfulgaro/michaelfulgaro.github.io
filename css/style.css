@@ -1,18 +1,38 @@
 /* -------------------------------------- *
 General Styles
 * --------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@1,700&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
 body {
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
+  font-family: "Work Sans", Verdana, sans-serif;
+  font-size: 16px;
+}
+header {
+  background-image: url("../images/dan-cristian-padure-unsplash.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+h1,
+h3 {
+  font-size: 70px;
+  font-kerning: normal;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+  color: white;
 }
 
-h1,
-h2,
-h3 {
-  font-size: 36px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+h2 {
+  font-size: 32px;
+  font-kerning: normal;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
 }
+
 main,
 header h1,
 nav div {
@@ -31,4 +51,23 @@ nav a:hover {
 nav {
   background-color: #ccc;
   padding: 12px;
+}
+
+
+.inspo-img {
+  width: 532px;
+}
+
+.three-col {
+  display: flex;
+}
+
+.three-col article {
+  flex: 1;
+  padding: 20px;
+}
+
+.three-col .description {
+  flex-grow: 2;
+  padding-top: 25px;
 }
