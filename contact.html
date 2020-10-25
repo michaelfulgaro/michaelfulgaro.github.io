@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michael's Net Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1>Michael's Net Home</h1>
+    </header>
+    <nav>
+      <div><a href="index.html">Home</a><a href="design-journal.html">Design Journal</a><a href="contact.html">Contact Me</a></div>
+    </nav>
+    <main>
+       <form action="dshgsgj" method="get">
+          <p>What is your name?
+              <input type="text" name="username" maxlength="30" class="username-field" required="required"/>
+          </p>
+          <p>What is your race?
+            <input type="radio" name="class" value="human" required="required"/> Human
+            <input type="radio" name="class" value="elf" required="required"/> Elf
+            <input type="radio" name="class" value="dwarf" required="required"/> Dwarf 
+            <input type="radio" name="class" value="goblin" required="required"/> Goblin 
+            <input type="radio" name="class" value="troll" required="required"/> Troll
+          </p>
+          <p>What is your weapon of choice? (Upload a photo)
+            <input type="file" name="weapon" required="required"/>
+          </p>
+          <p>How did you get here? 
+              <textarea name="comments">Let's hear about your journey...</textarea>
+          </p>
+             <input type="submit" name="submission" value="Submit"/>
+       </form>
+
+    </main>
+</html>
