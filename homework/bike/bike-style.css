@@ -1,0 +1,70 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+svg {
+    width: 75%;
+}
+
+#right-wheel, #left-wheel {
+    animation: wheel 1s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#man {
+    animation: man 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+
+#hat {
+    animation: hat 1s ease-in-out infinite alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+#bkg {
+    animation: bkg 1s ease-in-out infinite alternate;
+}
+
+@keyframes wheel{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes man{
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(30deg);
+    }
+}
+
+@keyframes hat{
+    from{
+        transform: translateY(0%) rotateZ(0deg);
+    }
+    to{
+        transform: translateY(70%) rotateZ(20deg);
+    }
+}
+
+@keyframes bkg {
+    from{
+        transform: rotateZ(-5deg);
+    }
+    to{
+        transform: rotateZ(5deg);
+    }
+}
