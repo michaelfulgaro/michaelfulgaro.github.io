@@ -1,8 +1,10 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body {
-    margin:0;
+    margin: 0;
     height: auto;
 }
 
@@ -10,135 +12,24 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 2rem;
-    background-color: white;
+    z-index: 3;
 }
 
 #logo {
     width: 23%;
 }
- 
-.menu-wrap {
-    top: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.menu-wrap .toggler {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
-    cursor: pointer;
-    width: 100px;
-    height: 100px;
-    opacity: 0;
-    padding: 2rem;
-}
-
-.menu-wrap .hamburger {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    width: 60px;
-    height: 60px;
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Hamburger lines */
-.menu-wrap .hamburger > div {
-    position: relative;
-    width: 100%;
-    height: 1.5px;
-    background-color: #008D65;
-    align-items: center;
-    justify-content: center;
-}
-
-.menu-wrap .hamburger > div:before {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: -10px;
-    width: 100%;
-    height: 1.5px;
-    background: inherit;
-}    
-
-.menu-wrap .hamburger > div:after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: 10px;
-    width: 100%;
-    height: 1.5px;
-    background: inherit;
-    align-items: center;
-}
-/* Show Menu */
-.menu-wrap .toggler:checked ~ .menu {
-    visibility: visible;
-}
-
-.menu-wrap .toggler:checked ~ .menu > div {
-    transform: scale(1);
-    transition-duration: var(--menuspeed);
-}
-
-.menu-wrap .toggler:checked ~ .menu > div > div {
-    opacity: 1;
-    transition: opacity 0.4s ease;
-}
-
-.menu-wrap .menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.menu-wrap .menu > div {
-    background: white;
-    width: 200vw;
-    height: 200vw;
-    display: flex;
-    flex: none;
-    align-items: center;
-    justify-content: center;
-    transform: scale(0);
-}
-
-.menu-wrap .menu > div > div {
-    text-align: center;
-    max-width: 90vw;
-    max-height: 100vh;
-    opacity: 0;
-}
-
-.menu-wrap .menu > div > div > ul > li {
-    list-style: none;
-    font-size: 3.5rem;
-}
-
-.menu-wrap .menu > div > div > ul > li > a {
-    color: black;
-    text-decoration: none;
-}
 
 p {
-    font-size: 1.5rem;
+    font-family: neue-haas-grotesk-text, Helvetica, Arial,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4rem;
 }
 
 h1 {
+    font-family: collier, Optima, sans-serif;
+    font-weight: 300;
+    font-style: normal;
     font-size: 3.5rem;
     text-transform: uppercase;
     margin: 0;
@@ -146,16 +37,25 @@ h1 {
 }
 
 #title {
+    font-weight: 200;
+    font-size: 4rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
 #subtitle {
+    font-family: neue-haas-grotesk-display, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 2rem;
     text-transform: uppercase;
+    line-height: 2rem;
 }
 
 h2 {
+    font-family: collier, Optima, sans-serif;
+    font-weight: 300;
+    font-style: normal;
     font-size: 3.5rem;
     text-transform: uppercase;
     margin: 0;
@@ -170,25 +70,29 @@ main {
     margin: auto;
 }
 
-#home-text {
+#home-text{
     display: flex;
-    flex: 0 1 40vw;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
 #home-img {
-    display: block;
+    display: flex;
     width: 100%;
+    height: auto;
 }
 
 .btn {
+    font-family: neue-haas-grotesk-text, Helvetica, Arial,sans-serif;
+    font-weight: 400;
+    font-style: normal;
     width: 100%;
     padding: 0.6rem;
     border: 1.5px #008D65 solid;
     display: inline-block;
     margin-bottom: 1rem;
+    margin-top: 1rem;
     text-decoration: none;
     color: #008D65;
     text-transform: uppercase;
@@ -201,11 +105,10 @@ main {
     color: white;
 }
 
-footer {
+footer p{
+    font-size: 1rem;
     text-align: center;
-}
-
-/* Screen Sizes 520px and Up */
-@media(min-width: 520px) {
-
+    color: #008D65;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
 }
