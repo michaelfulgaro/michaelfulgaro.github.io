@@ -1,5 +1,6 @@
 .container {
     width: 100%;
+    position: relative;
 }
 
 .navbar {
@@ -81,5 +82,4 @@
     font-kerning: normal;
     color: black;
     width: 50px;
-
 }

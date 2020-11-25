@@ -9,14 +9,12 @@ body {
 }
 
 #head {
-    display: flex;
     justify-content: space-between;
     padding: 2rem;
-    z-index: 3;
 }
 
 #logo {
-    width: 23%;
+    width: 90px;
 }
 
 p {
