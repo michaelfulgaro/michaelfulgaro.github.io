@@ -1,85 +1,91 @@
 .container {
-    width: 100%;
+  width: 100%;
 }
 
+.work-damnit {
+  width: 100vw;
+  position: relative;
+}
 .navbar {
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    position: fixed;
-    align-items: flex-start;
-    justify-content: center;
-    display: flex;
-    overflow-y: auto;
-    right: -100%;
-    transition: right .5s cubic-bezier(1, 0, 0, 1);
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+  overflow-y: auto;
+  height: 120px;
+  width: 120px;
+  overflow: hidden;
+  transition: right 0.5s cubic-bezier(1, 0, 0, 1);
 }
 
 .change {
-    right: 0;
+  height: 100vh;
+  width: 100vw;
 }
 
 .hamburger-menu {
-    width: 40px;
-    height: 30px;
-    position: fixed;
-    top: 50px;
-    right: 50px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .line {
-    width: 100%;
-    height: 1.5px;
-    background: #008D65;
-    transition: all 0.5s;
+  width: 100%;
+  height: 1.5px;
+  background: #008d65;
+  transition: all 0.5s;
 }
 
 .change .line-1 {
-    transform: rotateZ(-45deg) translate(-8px, 6px);
+  transform: rotateZ(-45deg) translate(-8px, 6px);
 }
 
 .change .line-2 {
-    opacity: 0;
+  opacity: 0;
 }
 
 .change .line-3 {
-    transform: rotateZ(45deg) translate(-8px, -6px);
+  transform: rotateZ(45deg) translate(-8px, -6px);
 }
 
 .nav-list {
-    text-align: center;
-    padding-top: 7rem;
+  text-align: center;
+  padding-top: 7rem;
 }
 
 .nav-item {
-    list-style: none;
-    border: 1.5px solid #008D65;
-    width: 101vw;
-    margin-bottom: -1.5px;
-    cursor: pointer;
+  list-style: none;
+  border: 1.5px solid #008d65;
+  width: 101vw;
+  margin-bottom: -1.5px;
+  cursor: pointer;
 }
 
 .nav-item:hover {
-    background: #008D65;
+  background: #008d65;
 }
 
 .nav-link:hover {
-    color: white;
+  color: white;
 }
 
 .nav-link {
-    font-family: collier, Optima, sans-serif;
-    font-weight: 300;
-    line-height: -0.5rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 3.5rem;
-    font-kerning: normal;
-    color: black;
-    width: 50px;
-
+  font-family: collier, Optima, sans-serif;
+  font-weight: 300;
+  line-height: -0.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-kerning: normal;
+  color: black;
+  width: 50px;
 }
