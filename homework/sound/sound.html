@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        var LOZ_Fanfare = new Audio();
+        LOZ_Fanfare.src = "LOZ_Fanfare.mp3";
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sound-style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    </style>
+
+    <title>HW - Sound</title>
+</head>
+<body>
+
+    <h1>It's dangerous to go<br>alone! Click this.</h1>
+    <div id="old-man">
+        <img src="images/flame.gif">
+        <img src="images/old-man.png" width="256px">
+        <img src="images/flame.gif">
+    </div>
+    
+    <div id="sword">
+           <img onclick="LOZ_Fanfare.play()" src="images/sword.png" width="120px">
+    </div>
+
+    <audio>
+        <source src="LOZ_Fanfare.mp3"></source>
+    </audio>
+</body>
+
+</html>

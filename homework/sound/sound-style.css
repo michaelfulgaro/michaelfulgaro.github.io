@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: black;
+}
+
+h1 {
+    font-size: 55px;
+    font-family: 'Press Start 2P', sans-serif;
+    font-kerning: normal;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 60px;
+    color: white;
+}
+
+#old-man {
+    display: flex;
+    flex-direction: row;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    justify-content: space-between;
+}
+
+#old-man img {
+    width: 14%;
+}
+
+#sword img {
+    width: 6.5%;
+    cursor: pointer;
+}
+
+#sword {
+    text-align: center;
+}
+

@@ -10,31 +10,25 @@
     <title>Vista House</title>
 </head>
 <body>
-    <div class="work-damnit">
-   <div class="container">
-       <nav class="navbar">
-          <div class="hamburger-menu">
-              <div class="line line-1"></div>
-              <div class="line line-2"></div>
-              <div class="line line-3"></div>
-          </div>
-          <ul class="nav-list">
-              <a href="#" class="nav-link"><li class="nav-item">Home</a></li>
-              <a href="#" class="nav-link"><li class="nav-item">About Us</a></li>
-              <a href="#" class="nav-link"><li class="nav-item">History</a></li>
-              <a href="#" class="nav-link"><li class="nav-item">Museum Shops</a></li>
-              <a href="#" class="nav-link"><li class="nav-item">Contact</a></li>
-              <a href="#" class="nav-link"><li class="nav-item">Accessibility</a></li>
-              <a href="#" class="nav-link"><li class="nav-item">Tourist Info</a></li>
-              <a href="#" class="nav-link"><li class="nav-item">Donate</a></li>
-          </ul>
-       </nav>
-   </div>
-   </div>
+
+<nav>
+   <a class="hamburger menu-screen"><span></span></a>
+   <ul class="menu menu-screen">
+       <li><a href="#" class="page-title no-click">Home</a></li>
+       <li><a href="#" class="page-title">About Us</a></li>
+       <li><a href="history.html" class="page-title">History</a></li>
+       <li><a href="shops.html" class="page-title">Museum Shops</a></li>
+       <li><a href="#" class="page-title">Accessibility</a></li>
+       <li><a href="#" class="page-title">Tourist Info</a></li>
+       <li><a href="contact.html" class="page-title">Contact</a></li>
+       <li><a href="#" class="page-title">Donate</a></li>
+   </ul>
+</nav>
+
    <main>
        <header>
-           <div id="head">
-              <img src="logos/vistahouse-logo-mobile.svg" alt="Vista House logo" id=logo>
+           <div id="home-head">
+              <img src="logos/vistahouse-logo-mobile.svg" alt="Vista House logo" class=logo>
            </div>
        </header>
 
@@ -49,9 +43,9 @@
             <img src="images/home.jpg" width="100%">
         </div>
 
-       <div id="home-body">
+       <div id="text-body">
           <h2>HOURS</h2>
-             <p>Open Everyday from 9AM to 5PM.<br><br>We will close if winds go above 50MPH, you can check wind speeds at the website below or call us to find out if we are open.</p>
+             <p>Open Everyday from 9AM to 5PM.<br><br>Wae will close if winds go above 50MPH, you can check wind speeds at the website below or call us to find out if we are open.</p>
              <a href="https://forecast.weather.gov/MapClick.php?lat=45.53440590000008&lon=-122.28745419999996#.X7GpY9t7l_s" alt="Weather Watch" class="btn">Weather Watch</a>
           <h2>DIRECTIONS</h2>
              <p>Located in the Crown Point State Scenic Corridor:</p>
@@ -60,13 +54,24 @@
    </main>
 
    <footer>
-      <p>503-344-1368<br>
-        friends@vistahouse.com<br>
-        40700 Historic Columbia River Hwy<br>
-        Corbett, OR 97019<br><br>
-        ©2020 All rights reserved. <a href>Privacy Policy</a></p>
-   </footer>
-   <script src="vh-script.js"></script>
-</body>
 
+      <a href="#" style="text-decoration: none;"><div class="back-to-top">
+          <svg id="arrow-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114.61 114.61"><defs><style>.cls-1{fill:none;stroke:#008d65;stroke-miterlimit:10;stroke-width:1.5px;}</style></defs><g id="arrow-top"><polyline vector-effect="non-scaling-stroke" class="cls-1" points="114.08 58.48 57.95 2.35 56.66 1.06 0.53 57.2"/><line vector-effect="non-scaling-stroke" class="cls-1" x1="56.66" y1="1.06" x2="56.66" y2="114.61"/></g></svg>
+
+          <p class="back-to-top-text">Back to top</p>
+      </div></a>
+
+      <div class="address">
+         <p>503-344-1368<br>
+         friends@vistahouse.com<br>
+         40700 Historic Columbia River Hwy<br>
+         Corbett, OR 97019<br><br>
+         ©2020 All rights reserved. <a class="pp-link" href="">Privacy Policy</a></p>
+      </div> 
+   </footer>
+
+   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+   <script src="vh-script.js"></script>
+
+</body>
 </html>
