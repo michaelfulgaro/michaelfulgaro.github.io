@@ -122,6 +122,22 @@ ul {
   color: white;
 }
 
+@media only screen and (min-width: 768px) {
+  .page-title {
+      font-size: 6rem;
+      padding-left: 3rem;
+  }
+
+  .page-title:hover {
+    background: transparent;
+    color: #008D65
+  }
+
+  .menu-screen.menu {
+    text-align: left;
+  }
+}
+
 /*
 .nav-link {
   font-family: collier, Optima, sans-serif;
