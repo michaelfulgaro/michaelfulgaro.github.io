@@ -80,7 +80,12 @@ ul {
   z-index: 10;
   transition: all .4s ease-in-out;
   transform: translateX(-100%);
+
   scroll-margin: 100vh;
+}
+
+.hidden {
+  display:none;
 }
 
 .menu-shown .menu-screen.menu {
