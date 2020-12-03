@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $('.hamburger').click(function(){
       $('body').toggleClass('menu-shown');
+      $('main').toggleClass('hidden');
   });
 });
 
