@@ -63,6 +63,12 @@ h1 {
     font-size: 2rem;
     text-transform: uppercase;
     line-height: 2rem;
+    width: 100%;
+    left: 0;
+}
+
+iframe {
+    display: none;
 }
 
 h2 {
@@ -74,6 +80,9 @@ h2 {
     margin: 0;
     line-height: 3rem;
     padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: block;
 }
 
 h3 {
@@ -85,6 +94,7 @@ h3 {
     line-height: 2rem;
     padding-bottom: 0.5rem;
 }
+
 #text-body{
     padding-left: 2rem;
     padding-right: 2rem;
@@ -100,6 +110,8 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100%;
+    left: 0;
     margin-top: -5rem;
 }
 
@@ -108,7 +120,6 @@ main {
     width: 100%;
     height: auto;
     position: absolute;
-
 }
 
 .btn {
@@ -127,6 +138,8 @@ main {
     text-align: center;
     font-size: 1.5rem;
     transition: 300ms;
+    background: none;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -200,24 +213,21 @@ main {
 .next-btn {
     padding-left: 2rem;
     padding-right: 2rem;
-    position: absolute;
     cursor: pointer;
 }
 
 .prev-btn {
-    display: flex;
     left: 0;
 }
 
 .next-btn {
-    display: flex;
     right: 0;
 }
 
 .slide-nav {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding-bottom: 1rem;
 }
 
@@ -318,14 +328,6 @@ q {
 
 /* SUB-PAGE ONLY */
 
-iframe {
-    display: block;
-    width: 100%;
-    height: 427px;
-    padding-top: -2.5rem;
-    padding-bottom: -2.5rem;
-}
-
 .sub-img {
    width: 100%;
    margin-top: 1rem;
@@ -344,7 +346,16 @@ iframe {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+}
 
+#col-1 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#contact-intro {
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .input-fields, .msg {
@@ -365,7 +376,7 @@ iframe {
 }
 
 .msg textarea {
-    height: 150px;
+    height: 250px;
     resize: vertical;
 }
 
@@ -390,8 +401,164 @@ iframe {
     letter-spacing: 0.1rem;
 }
 
+.thanks {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.thanks h1 {
+    padding: 0;
+    font-size: 4.5rem;
+    color: #008D65;
+    padding-bottom: 1.5rem;
+}
+
+.thanks h2 {
+    font-family: neue-haas-grotesk-display, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 2rem;
+    padding-bottom: 0.5rem;
+    color:  #A0A0A0;
+    padding-bottom: 1.5rem;
+}
+
+.thanks a {
+    color: #008D65;
+    text-transform: uppercase;
+}
+
 /* DESKTOP */
 
 @media only screen and (min-width: 768px) {
+   .this-content {
+       width: 70%;
+       float: right;
+   }
+
+   .wrap-slide-nav {
+       width: 100%;
+       display: flex;
+       flex-direction: row-reverse;
+       padding-right: 4rem;
+       padding-bottom: 1rem;
+   }
+
+   .slide-nav {
+       padding-left: 4rem;
+       padding-right: 0.7rem;
+   }
+
+   #text-body {
+       padding-right: 4rem;
+       padding-left: 30%;
+   }
+
+   .slide-container {
+       height: 550px;
+       padding-right: 4rem;
+   }
+
+   h1 {
+       font-size: 5rem;
+   }
+
+   h2 {
+       font-size: 5rem;
+   }
+
+   .sub-img {
+       padding-right: 4rem;
+       padding-left: 30%;
+   }
+
+   p {
+       font-size: 1rem;
+   }
+
+   q {
+       font-size: 0.8rem;
+   }
+
+   .author {
+       font-size: 0.8rem;
+   }
+
+   footer .back-to-top {
+       float: right;
+       padding-right: 4rem;
+       padding-bottom: 0rem;
+   }
+
+   footer .back-to-top-text {
+       font-size: 0.8rem;
+   }
+
+   footer .address p {
+       float: left;
+       text-align: left;
+       font-size: 0.8rem;
+       padding-left: 4rem;
+   }
+
+   .btn {
+       font-size: 1rem;
+       width: 25%;
+   }
+
+   #title {
+       font-size: 5rem;
+   }
+
+   iframe {
+    width: 100%;
+    display: block;
+   }
+
+   #text-form-wrap {
+       display: flex;
+       flex-direction: row;
+   }
+
+   #col-2 {
+       width: 70%;
+       float: right;
+   }
+
+   #col-1 {
+       width: 30%;
+       padding-top: 2rem;
+       padding-left: 4rem;
+   }
+
+   .form-wrap {
+       padding-right: 4rem;
+       padding-top: 2rem;
+   }
+
+   #contact-intro {
+       padding-right: 4rem;
+       padding-left: 4rem;
+       padding-top: 2rem;
+   }
+
+   .input-fields .input,
+   .msg textarea {
+       font-family: neue-haas-grotesk-text, Helvetica, Arial,sans-serif;
+       font-weight: 400;
+       font-style: normal;
+       font-size: 1rem;
+       background: transparent;
+       border: 1.5px solid #008D65;
+       padding: 10px;
+       margin-bottom: -1.5px;
+}  
+
 
 }

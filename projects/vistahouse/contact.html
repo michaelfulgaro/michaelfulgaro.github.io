@@ -46,11 +46,14 @@
        </header>
 
        <h1>Contact Us</h1>
-       <div id="text-body">
+       <div id="contact-intro">
          <p>Our purpose is to assist in the improvement, restoration, staffing and maintenance of the Vista House at Crown Point State Park.
-         Friends of Vista House is a 501(c)3 organization and all donations and membership fees are tax deductible.<br><br>
-            
-         503-344-1368<br>
+         Friends of Vista House is a 501(c)3 organization and all donations and membership fees are tax deductible.</p><br>
+       </div>
+    
+    <div id="text-form-wrap">
+      <div id="col-1">
+         <p>503-344-1368<br>
          friends@vistahouse.com<br>
          40700 Historic Columbia River Hwy<br>
          Corbett, OR 97019<br><br>
@@ -59,35 +62,48 @@
          Friends of Vista House<br>
          P.O. Box 204<br>
          Corbett, OR 97019<br><br></p>
-       </div>  
+       </div>
+         
+      <div id="col-2">
 
+    <form target="_blank" action="https://getsimpleform.com/messages?form_api_token=b62c2e246810ed31cb8e8a51da71bf1f" method="post">
        <div class="form-wrap">
            <div class="contact-form">
                <div class="input-fields">
-                   <input type="text" class="input" placeholder="Name"> 
-                   <input type="text" class="input" placeholder="Email">
+                   <input type="text" class="input" placeholder="Name" required="required"> 
+                   <input type="text" class="input" placeholder="Email" required="required">
                </div>
                <div class="msg">
-                  <textarea placeholder="Message"></textarea>
+                  <textarea placeholder="Message" required="required"></textarea>
                </div>
-                  <div class="btn">Send</div>
+               <input onclick="window.location.href = 'https://michaelfulgaro.github.io/projects/vistahouse/thanks.html';" type="submit" name="submission" value="Send" class="btn">
            </div>
-       </div><br><br>
+       </div>
+      </div>
+    </div>
+    </form>
 
-       <div id="text-body">
-        <h2>Newsletter</h2>
+       <br><br>
+
+       <h2>Newsletter</h2>
+    
+    <div id="text-form-wrap">
+     <div id="col-1">
         <p>Sign up for our newsletter to get the latest updates on the Vista House, upcoming projects, and restorations!<br><br></p>
-       </div>  
+     </div>
 
+     <div id="col-2">
        <div class="form-wrap">
         <div class="contact-form">
             <div class="input-fields">
-                <input type="text" class="input" placeholder="First Name"> 
-                <input type="text" class="input" placeholder="Last Name">
-                <input type="text" class="input" placeholder="Email">
+                <input type="text" class="input" placeholder="First Name" required="required"> 
+                <input type="text" class="input" placeholder="Last Name" required="required">
+                <input type="text" class="input" placeholder="Email" required="required">
             </div>
-               <div class="btn">Send</div>
+            <a href="thanks.html"><input type="submit" name="submission" value="Send" class="btn"></a>
         </div>
+    </div>
+    </div>
     </div>
        
    </main>

@@ -114,6 +114,7 @@ ul {
 
 .page-title.no-click {
   color: #A0A0A0;
+  cursor: default;
 }
 
 .page-title.no-click:hover {
@@ -139,6 +140,10 @@ ul {
 
   .menu-screen.menu {
     text-align: left;
+  }
+
+  .menu-screen .page-title {
+    line-height: 1.5;
   }
 }
 
