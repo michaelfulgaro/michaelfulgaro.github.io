@@ -429,9 +429,11 @@ q {
     padding-bottom: 1.5rem;
 }
 
-.thanks a {
+.thanks p {
     color: #008D65;
     text-transform: uppercase;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 /* DESKTOP */
@@ -560,5 +562,8 @@ q {
        margin-bottom: -1.5px;
 }  
 
+   .thanks h1 {
+       font-size: 6rem;
+}
 
 }

@@ -133,11 +133,6 @@ ul {
       padding-left: 3rem;
   }
 
-  .page-title:hover {
-    background: transparent;
-    color: #008D65
-  }
-
   .menu-screen.menu {
     text-align: left;
   }
@@ -145,17 +140,4 @@ ul {
   .menu-screen .page-title {
     line-height: 1.5;
   }
-}
-
-/*
-.nav-link {
-  font-family: collier, Optima, sans-serif;
-  font-weight: 300;
-  line-height: -0.5rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 3.5rem;
-  font-kerning: normal;
-  color: black;
-  width: 50px;
 }
