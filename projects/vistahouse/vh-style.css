@@ -376,7 +376,7 @@ q {
 }
 
 .msg textarea {
-    height: 250px;
+    height: 300px;
     resize: vertical;
 }
 
