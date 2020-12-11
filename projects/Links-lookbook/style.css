@@ -1,11 +1,23 @@
+:root {
+   --backgroundSize: 235px;
+}
+
 body { 
    margin: 30;
    background-image: url(images/pattern.svg);
-   background-size: 275px;
+   background-size: var(--backgroundSize);
    background-color: rgb(249, 242, 216);
-   height: auto;
+   height: 100vh;
+   width: 100%;
    background-repeat: repeat;
+   animation: movingBackground linear infinite 6s;
 }
+
+@keyframes movingBackground {
+   from {background-position: 0 0;}
+   to {background-position: var(--backgroundSize) var(--backgroundSize);}
+}
+
 * {box-sizing: border-box;}
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -166,8 +178,8 @@ h3 {
 
 .des-style {
    font-family: Rubik, Helvetica, Arial, sans-serif;
-   font-size: 23px;
-   line-height: 29px;
+   font-size: 2.5vh;
+   line-height: 4vh;
    color: white;
    background-color: rgba(0, 0, 0, 70%);
    padding: 35px;
